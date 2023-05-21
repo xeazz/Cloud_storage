@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - include:
+      file: migrations/create-table-users.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/create-table-roles.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/create-table-user-roles.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/create-table-cloud-files.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/insert-value-table-users.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/insert-value-table-roles.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/insert-value-table-user-roles.sql
+      relativeToChangelogFile: true

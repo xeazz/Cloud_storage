@@ -1,0 +1,1155 @@
+00:03:04.500 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 59623 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:03:04.511 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:03:07.712 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:03:07.715 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:03:07.917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:03:08.311 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:03:08.598 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:03:09.217 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:03:09.267 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:03:09.476 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:03:09.546 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:03:09.636 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:03:09.637 [main] INFO  liquibase.util - Run:                          0
+00:03:09.638 [main] INFO  liquibase.util - Previously run:               7
+00:03:09.639 [main] INFO  liquibase.util - Filtered out:                 0
+00:03:09.639 [main] INFO  liquibase.util - -------------------------------
+00:03:09.639 [main] INFO  liquibase.util - Total change sets:            7
+
+00:03:09.641 [main] INFO  liquibase.util - Update summary generated
+00:03:09.656 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:03:09.665 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:03:09.668 [main] INFO  liquibase.command - Command execution complete
+00:03:09.870 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:03:09.922 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:03:10.209 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:03:10.371 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:03:11.323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:03:13.961 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 10.019 seconds (JVM running for 30.237)
+00:03:14.286 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:03:14.321 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:03:14.342 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:03:14.875 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:03:14.878 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:03:14.901 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:03:14.906 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:03:14.907 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[file [/var/folders/sb/14w3_1fs5m1426xrvzhyxh5c0000gn/T/test-file2513720926176439082.txt]]}] as "multipart/form-data"
+00:03:14.999 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:03:15.003 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:03:15.980 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:03:16.033 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:08:20.293 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 59949 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:08:20.298 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:08:23.468 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:08:23.471 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:08:23.649 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:08:23.988 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:08:24.249 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:08:24.826 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:08:24.881 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:08:25.099 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:08:25.160 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:08:25.220 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:08:25.223 [main] INFO  liquibase.util - Run:                          0
+00:08:25.223 [main] INFO  liquibase.util - Previously run:               7
+00:08:25.223 [main] INFO  liquibase.util - Filtered out:                 0
+00:08:25.223 [main] INFO  liquibase.util - -------------------------------
+00:08:25.224 [main] INFO  liquibase.util - Total change sets:            7
+
+00:08:25.224 [main] INFO  liquibase.util - Update summary generated
+00:08:25.242 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:08:25.253 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:08:25.257 [main] INFO  liquibase.command - Command execution complete
+00:08:25.465 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:08:25.518 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:08:25.787 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:08:25.943 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:08:26.957 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:08:29.458 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 9.884 seconds (JVM running for 29.184)
+00:08:29.751 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:08:29.784 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:08:29.802 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:08:30.324 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:08:30.327 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:08:30.345 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:08:30.351 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:08:30.353 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[file [/Users/dmitrijvorobev/Desktop/Netology/CloudStor/test-file.txt]]}] as "multipart/form-data"
+00:08:30.433 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:08:30.436 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:08:31.190 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:08:31.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:10:34.742 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60095 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:10:34.747 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:10:37.734 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:10:37.736 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:10:37.875 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:10:38.195 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:10:38.434 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:10:38.966 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:10:39.018 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:10:39.258 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:10:39.314 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:10:39.369 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:10:39.370 [main] INFO  liquibase.util - Run:                          0
+00:10:39.371 [main] INFO  liquibase.util - Previously run:               7
+00:10:39.371 [main] INFO  liquibase.util - Filtered out:                 0
+00:10:39.371 [main] INFO  liquibase.util - -------------------------------
+00:10:39.372 [main] INFO  liquibase.util - Total change sets:            7
+
+00:10:39.373 [main] INFO  liquibase.util - Update summary generated
+00:10:39.399 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:10:39.408 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:10:39.413 [main] INFO  liquibase.command - Command execution complete
+00:10:39.615 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:10:39.660 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:10:39.914 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:10:40.059 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:10:40.937 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:10:43.267 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 9.253 seconds (JVM running for 27.994)
+00:10:43.528 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:10:43.559 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:10:43.577 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:10:44.054 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:10:44.057 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:10:44.074 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:10:44.078 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:10:44.079 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[file [/Users/dmitrijvorobev/Desktop/Netology/CloudStor/test-file.txt]]}] as "multipart/form-data"
+00:10:44.222 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:10:44.229 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:10:44.786 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:10:44.810 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:12:00.510 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60180 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:12:00.516 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:12:03.502 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:12:03.506 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:12:03.655 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:12:03.976 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:12:04.208 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:12:04.741 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:12:04.780 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:12:04.995 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:12:05.085 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:12:05.155 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:12:05.158 [main] INFO  liquibase.util - Run:                          0
+00:12:05.159 [main] INFO  liquibase.util - Previously run:               7
+00:12:05.159 [main] INFO  liquibase.util - Filtered out:                 0
+00:12:05.159 [main] INFO  liquibase.util - -------------------------------
+00:12:05.159 [main] INFO  liquibase.util - Total change sets:            7
+
+00:12:05.160 [main] INFO  liquibase.util - Update summary generated
+00:12:05.174 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:12:05.184 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:12:05.188 [main] INFO  liquibase.command - Command execution complete
+00:12:05.402 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:12:05.446 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:12:05.696 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:12:05.839 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:12:06.686 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:12:09.076 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 9.079 seconds (JVM running for 27.952)
+00:12:09.337 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:12:09.371 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:12:09.387 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:12:09.884 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:12:09.886 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:12:09.900 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:12:09.903 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:12:09.906 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[file [/Users/dmitrijvorobev/Desktop/Netology/CloudStor/test-file.txt]]}] as "multipart/form-data"
+00:12:09.973 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:12:09.974 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:12:10.581 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:12:10.642 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:14:55.765 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60354 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:14:55.771 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:14:58.763 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:14:58.767 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:14:58.901 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:14:59.234 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:14:59.481 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:15:00.016 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:15:00.052 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:15:00.285 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:15:00.359 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:15:00.418 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:15:00.419 [main] INFO  liquibase.util - Run:                          0
+00:15:00.419 [main] INFO  liquibase.util - Previously run:               7
+00:15:00.419 [main] INFO  liquibase.util - Filtered out:                 0
+00:15:00.419 [main] INFO  liquibase.util - -------------------------------
+00:15:00.420 [main] INFO  liquibase.util - Total change sets:            7
+
+00:15:00.421 [main] INFO  liquibase.util - Update summary generated
+00:15:00.436 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:15:00.444 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:15:00.455 [main] INFO  liquibase.command - Command execution complete
+00:15:00.642 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:15:00.689 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:15:00.940 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:15:01.086 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:15:01.967 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:15:04.376 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 9.225 seconds (JVM running for 28.035)
+00:15:04.678 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:15:04.712 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:15:04.732 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:15:05.221 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:15:05.224 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:15:05.243 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:15:05.247 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:15:05.248 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@59d8a968]}] as "multipart/form-data"
+00:15:05.357 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:15:05.359 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:15:05.952 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:15:05.975 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:16:53.251 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60493 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:16:53.258 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:16:56.242 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:16:56.246 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:16:56.406 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:16:56.723 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:16:56.979 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:16:57.494 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:16:57.546 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:16:57.750 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:16:57.810 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:16:57.864 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:16:57.865 [main] INFO  liquibase.util - Run:                          0
+00:16:57.865 [main] INFO  liquibase.util - Previously run:               7
+00:16:57.865 [main] INFO  liquibase.util - Filtered out:                 0
+00:16:57.865 [main] INFO  liquibase.util - -------------------------------
+00:16:57.866 [main] INFO  liquibase.util - Total change sets:            7
+
+00:16:57.867 [main] INFO  liquibase.util - Update summary generated
+00:16:57.881 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:16:57.893 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:16:57.898 [main] INFO  liquibase.command - Command execution complete
+00:16:58.085 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:16:58.135 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:16:58.405 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:16:58.556 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:16:59.412 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:17:01.645 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 8.932 seconds (JVM running for 27.603)
+00:17:01.922 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:17:01.953 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:17:01.970 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:17:02.481 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:17:02.484 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:17:02.497 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file
+00:17:02.501 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:17:02.503 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@42599b84]}] as "multipart/form-data"
+00:17:02.536 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:17:02.538 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:17:03.205 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:17:03.234 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:18:16.324 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60583 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:18:16.331 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:18:19.220 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:18:19.224 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:18:19.378 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:18:19.704 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:18:19.944 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:18:20.522 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:18:20.572 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:18:20.782 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:18:20.851 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:18:20.926 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:18:20.927 [main] INFO  liquibase.util - Run:                          0
+00:18:20.928 [main] INFO  liquibase.util - Previously run:               7
+00:18:20.928 [main] INFO  liquibase.util - Filtered out:                 0
+00:18:20.928 [main] INFO  liquibase.util - -------------------------------
+00:18:20.929 [main] INFO  liquibase.util - Total change sets:            7
+
+00:18:20.930 [main] INFO  liquibase.util - Update summary generated
+00:18:20.951 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:18:20.963 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:18:20.968 [main] INFO  liquibase.command - Command execution complete
+00:18:21.161 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:18:21.208 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:18:21.452 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:18:21.607 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:18:22.482 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:18:24.756 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 8.927 seconds (JVM running for 26.72)
+00:18:25.029 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:18:25.061 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:18:25.076 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:18:25.561 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:18:25.565 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:18:25.594 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:18:25.596 [main] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+00:18:25.598 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[file [/var/folders/sb/14w3_1fs5m1426xrvzhyxh5c0000gn/T/test-file2578631894007321772.txt]]}] as "multipart/form-data"
+00:18:25.655 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:18:25.663 [main] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+00:18:26.271 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:18:26.313 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:20:03.334 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60772 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:20:03.341 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:20:06.320 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:20:06.323 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:20:06.455 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:20:06.762 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:20:07.010 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:20:07.607 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:20:07.651 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:20:07.896 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:20:07.955 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:20:08.004 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:20:08.006 [main] INFO  liquibase.util - Run:                          0
+00:20:08.006 [main] INFO  liquibase.util - Previously run:               7
+00:20:08.006 [main] INFO  liquibase.util - Filtered out:                 0
+00:20:08.007 [main] INFO  liquibase.util - -------------------------------
+00:20:08.008 [main] INFO  liquibase.util - Total change sets:            7
+
+00:20:08.009 [main] INFO  liquibase.util - Update summary generated
+00:20:08.029 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:20:08.043 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:20:08.047 [main] INFO  liquibase.command - Command execution complete
+00:20:08.228 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:20:08.279 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:20:08.492 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:20:08.657 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:20:09.540 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:20:11.932 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 9.106 seconds (JVM running for 28.286)
+00:20:12.209 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:20:12.242 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:20:12.258 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:20:12.771 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:20:12.775 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:20:12.795 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=test-file.txt
+00:20:12.797 [main] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+00:20:12.798 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@14cd8dfa]}] as "multipart/form-data"
+00:20:12.860 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:20:12.861 [main] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
+00:20:13.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:20:13.735 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:23:00.744 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 60959 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:23:00.750 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:23:04.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:23:04.059 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:23:04.209 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:23:04.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:23:04.813 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:23:05.392 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:23:05.450 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:23:05.756 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:23:05.861 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:23:05.932 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:23:05.934 [main] INFO  liquibase.util - Run:                          0
+00:23:05.934 [main] INFO  liquibase.util - Previously run:               7
+00:23:05.934 [main] INFO  liquibase.util - Filtered out:                 0
+00:23:05.934 [main] INFO  liquibase.util - -------------------------------
+00:23:05.935 [main] INFO  liquibase.util - Total change sets:            7
+
+00:23:05.936 [main] INFO  liquibase.util - Update summary generated
+00:23:05.951 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:23:05.959 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:23:05.964 [main] INFO  liquibase.command - Command execution complete
+00:23:06.161 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:23:06.210 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:23:06.444 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:23:06.628 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:23:07.495 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:23:10.109 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 10.119 seconds (JVM running for 29.622)
+00:23:10.420 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:23:10.459 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:23:10.479 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:23:11.036 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:23:11.038 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:23:11.057 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=NAME.txt
+00:23:11.060 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:23:11.061 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@2c69ea30]}] as "multipart/form-data"
+00:23:11.119 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:23:11.121 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.SuccessResponse]
+00:23:12.168 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:23:12.263 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:26:41.905 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 61217 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:26:41.911 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:26:44.445 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:26:44.448 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:26:44.552 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:26:44.830 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:26:45.045 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:26:45.500 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:26:45.541 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:26:45.752 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:26:45.822 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:26:45.863 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:26:45.864 [main] INFO  liquibase.util - Run:                          0
+00:26:45.864 [main] INFO  liquibase.util - Previously run:               7
+00:26:45.864 [main] INFO  liquibase.util - Filtered out:                 0
+00:26:45.864 [main] INFO  liquibase.util - -------------------------------
+00:26:45.865 [main] INFO  liquibase.util - Total change sets:            7
+
+00:26:45.865 [main] INFO  liquibase.util - Update summary generated
+00:26:45.883 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:26:45.893 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:26:45.897 [main] INFO  liquibase.command - Command execution complete
+00:26:46.080 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:26:46.122 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:26:46.363 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:26:46.492 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:26:47.325 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:26:49.449 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 8.217 seconds (JVM running for 25.023)
+00:26:49.742 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:26:49.770 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:26:49.795 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:26:49.809 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+00:26:49.813 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:26:49.814 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:26:49.822 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:26:49.822 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+00:26:49.824 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+00:26:49.824 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:57286<->127.0.0.1:8080
+00:26:49.824 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /login HTTP/1.1
+00:26:49.824 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:26:49.825 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /login HTTP/1.1
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 44
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:26:49.825 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /login HTTP/1.1[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 44[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:26:49.826 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"login":"admin@mail.ru","password":"admin"}"
+00:26:50.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:26:50 GMT[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "e1[\r][\n]"
+00:26:50.209 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"auth-token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ0MTAsImV4cCI6MTY4NDc5MDgxMH0.F_ilh6VBgAQcL_55OEyw8jltCjNq4XZW15Ie20fnj4I"}[\r][\n]"
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:26:50.210 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:26:50.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:26:50.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:26:50.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:26:50 GMT
+00:26:50.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+00:26:50.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+00:26:50.213 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+00:26:50.214 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:26:50.216 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:26:50.224 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:26:50.225 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:26:50.225 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+00:26:50.225 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:26:50.225 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:26:50.225 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=NAME.txt
+00:26:50.226 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:26:50.227 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@3ae5cbb9]}] as "multipart/form-data"
+00:26:50.230 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+00:26:50.230 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:26:50.230 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:26:50.230 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:26:50.230 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:26:50.230 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /file?filename=NAME.txt HTTP/1.1
+00:26:50.230 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:26:50.230 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /file?filename=NAME.txt HTTP/1.1
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ0MTAsImV4cCI6MTY4NDc5MDgxMH0.F_ilh6VBgAQcL_55OEyw8jltCjNq4XZW15Ie20fnj4I
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: multipart/form-data;boundary=mMhrmNwTetrpt_BjizvYn88XCxz8ZDER
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 190
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:26:50.230 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /file?filename=NAME.txt HTTP/1.1[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ0MTAsImV4cCI6MTY4NDc5MDgxMH0.F_ilh6VBgAQcL_55OEyw8jltCjNq4XZW15Ie20fnj4I[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: multipart/form-data;boundary=mMhrmNwTetrpt_BjizvYn88XCxz8ZDER[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 190[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "--mMhrmNwTetrpt_BjizvYn88XCxz8ZDER[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Disposition: form-data; name="file"[\r][\n]"
+00:26:50.230 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+00:26:50.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 8[\r][\n]"
+00:26:50.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:26:50.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "NAME.txt[\r][\n]"
+00:26:50.231 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "--mMhrmNwTetrpt_BjizvYn88XCxz8ZDER--[\r][\n]"
+00:26:50.251 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 400 [\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:26:50 GMT[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: close[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "5f[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"timestamp":"2023-05-21T21:26:50.250+00:00","status":400,"error":"Bad Request","path":"/file"}[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 400 
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:26:50 GMT
+00:26:50.252 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: close
+00:26:50.253 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:26:50.253 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+00:26:50.253 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection discarded
+00:26:50.253 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:26:51.159 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:26:51.188 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:33:41.509 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 61646 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:33:41.516 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:33:44.174 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:33:44.176 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:33:44.284 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:33:44.557 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:33:44.753 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:33:45.262 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:33:45.304 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:33:45.496 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:33:45.545 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:33:45.583 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:33:45.585 [main] INFO  liquibase.util - Run:                          0
+00:33:45.585 [main] INFO  liquibase.util - Previously run:               7
+00:33:45.585 [main] INFO  liquibase.util - Filtered out:                 0
+00:33:45.586 [main] INFO  liquibase.util - -------------------------------
+00:33:45.586 [main] INFO  liquibase.util - Total change sets:            7
+
+00:33:45.588 [main] INFO  liquibase.util - Update summary generated
+00:33:45.605 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:33:45.614 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:33:45.618 [main] INFO  liquibase.command - Command execution complete
+00:33:45.797 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:33:45.838 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:33:46.061 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:33:46.217 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:33:47.066 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:33:49.472 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 8.709 seconds (JVM running for 24.201)
+00:33:49.645 [Finalizer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection manager is shutting down
+00:33:49.649 [Finalizer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection manager shut down
+00:33:49.770 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:33:49.803 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:33:49.829 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:33:49.845 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+00:33:49.850 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:33:49.851 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:33:49.859 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:33:49.860 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+00:33:49.862 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+00:33:49.863 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:59076<->127.0.0.1:8080
+00:33:49.864 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /login HTTP/1.1
+00:33:49.865 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:33:49.865 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /login HTTP/1.1
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 44
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:33:49.866 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /login HTTP/1.1[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 44[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:33:49.866 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:33:49.867 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:33:49.867 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"login":"admin@mail.ru","password":"admin"}"
+00:33:50.273 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:33:50 GMT[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "e1[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"auth-token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ4MzAsImV4cCI6MTY4NDc5MTIzMH0.LOqzcEqt4UtXWvyJSta6jiScRpQ7U9F7-xbGGv7TY7Q"}[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:33:50.274 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:33:50.275 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:33:50.276 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:33:50.276 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:33:50 GMT
+00:33:50.276 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+00:33:50.276 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+00:33:50.279 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+00:33:50.283 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:33:50.286 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:33:50.298 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+00:33:50.298 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:33:50.298 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:33:50.299 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/file?filename=NAME.txt
+00:33:50.300 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:33:50.302 [main] DEBUG o.s.web.client.RestTemplate - Writing [{file=[[B@4e132a9b]}] as "multipart/form-data"
+00:33:50.305 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+00:33:50.305 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:33:50.305 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:33:50.305 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:33:50.305 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:33:50.305 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /file?filename=NAME.txt HTTP/1.1
+00:33:50.306 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:33:50.306 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /file?filename=NAME.txt HTTP/1.1
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ4MzAsImV4cCI6MTY4NDc5MTIzMH0.LOqzcEqt4UtXWvyJSta6jiScRpQ7U9F7-xbGGv7TY7Q
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: multipart/form-data;boundary=EA0XE9V6vFOqx8FL7eOmCxRXnou9SA7tgnMbKD
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 202
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:33:50.306 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /file?filename=NAME.txt HTTP/1.1[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDQ4MzAsImV4cCI6MTY4NDc5MTIzMH0.LOqzcEqt4UtXWvyJSta6jiScRpQ7U9F7-xbGGv7TY7Q[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: multipart/form-data;boundary=EA0XE9V6vFOqx8FL7eOmCxRXnou9SA7tgnMbKD[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 202[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "--EA0XE9V6vFOqx8FL7eOmCxRXnou9SA7tgnMbKD[\r][\n]"
+00:33:50.306 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Disposition: form-data; name="file"[\r][\n]"
+00:33:50.307 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+00:33:50.307 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 8[\r][\n]"
+00:33:50.307 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:33:50.307 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "NAME.txt[\r][\n]"
+00:33:50.307 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "--EA0XE9V6vFOqx8FL7eOmCxRXnou9SA7tgnMbKD--[\r][\n]"
+00:33:50.331 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 400 [\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:33:50 GMT[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: close[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "5f[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"timestamp":"2023-05-21T21:33:50.330+00:00","status":400,"error":"Bad Request","path":"/file"}[\r][\n]"
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 400 
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:33:50 GMT
+00:33:50.332 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: close
+00:33:50.333 [main] DEBUG o.s.web.client.RestTemplate - Response 400 BAD_REQUEST
+00:33:50.333 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:33:50.333 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:33:50.333 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+00:33:50.334 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection discarded
+00:33:50.334 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:33:51.249 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:33:51.292 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:43:19.400 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 62145 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:43:19.407 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:43:21.923 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:43:21.925 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:43:22.055 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:43:22.318 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:43:22.553 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:43:23.051 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:43:23.096 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:43:23.270 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:43:23.322 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:43:23.363 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:43:23.364 [main] INFO  liquibase.util - Run:                          0
+00:43:23.364 [main] INFO  liquibase.util - Previously run:               7
+00:43:23.364 [main] INFO  liquibase.util - Filtered out:                 0
+00:43:23.364 [main] INFO  liquibase.util - -------------------------------
+00:43:23.365 [main] INFO  liquibase.util - Total change sets:            7
+
+00:43:23.366 [main] INFO  liquibase.util - Update summary generated
+00:43:23.388 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:43:23.398 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:43:23.401 [main] INFO  liquibase.command - Command execution complete
+00:43:23.555 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:43:23.598 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:43:23.816 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:43:23.942 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:43:24.668 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:43:26.839 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 8.116 seconds (JVM running for 24.976)
+00:43:27.161 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:43:27.190 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:43:27.209 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:43:27.227 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:43:27.228 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:43:27.229 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:43:27.237 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:43:27.238 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+00:43:27.240 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+00:43:27.240 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:61527<->127.0.0.1:8080
+00:43:27.241 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /login HTTP/1.1
+00:43:27.241 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:43:27.241 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /login HTTP/1.1
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 44
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:43:27.242 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:43:27.243 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /login HTTP/1.1[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 44[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:43:27.243 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"login":"admin@mail.ru","password":"admin"}"
+00:43:27.653 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:43:27 GMT[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "e1[\r][\n]"
+00:43:27.656 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"auth-token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDU0MDcsImV4cCI6MTY4NDc5MTgwN30.EoLoo4y25Hg87BHy7qp5yvG0Q79lLWiztl84PASrs1I"}[\r][\n]"
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:43:27 GMT
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+00:43:27.658 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+00:43:27.661 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+00:43:27.663 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:43:27.664 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:43:27.671 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:43:27.672 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:43:27.673 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+00:43:27.673 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:43:27.673 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:43:28.024 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:43:28.042 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:51:56.016 [main] INFO  r.n.c.repository.CloudRepositoryTest - Starting CloudRepositoryTest using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 62726 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:51:56.019 [main] INFO  r.n.c.repository.CloudRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+00:51:57.712 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:51:58.147 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:51:58.693 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:51:58.759 [main] WARN  liquibase.util - Failed to perform a method call for SnakeYaml because the version of SnakeYaml being used is too old. Consider upgrading to a SnakeYaml version equal to or newer than 1.32, by downloading and installing a newer version of Liquibase (which includes a newer version of SnakeYaml). Loading particularly large JSON and YAML documents (like snapshots) in Liquibase may fail if SnakeYaml is not upgraded.
+00:51:58.920 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:51:58.971 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:51:59.018 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:51:59.019 [main] INFO  liquibase.util - Run:                          0
+00:51:59.019 [main] INFO  liquibase.util - Previously run:               7
+00:51:59.019 [main] INFO  liquibase.util - Filtered out:                 0
+00:51:59.019 [main] INFO  liquibase.util - -------------------------------
+00:51:59.020 [main] INFO  liquibase.util - Total change sets:            7
+
+00:51:59.021 [main] INFO  liquibase.util - Update summary generated
+00:51:59.031 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:51:59.040 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:51:59.042 [main] INFO  liquibase.command - Command execution complete
+00:51:59.295 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:51:59.336 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+00:51:59.476 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:51:59.615 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:52:00.438 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:52:01.372 [main] INFO  r.n.c.repository.CloudRepositoryTest - Started CloudRepositoryTest in 6.126 seconds (JVM running for 7.847)
+00:52:01.792 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:01.867 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:01.920 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:01.947 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:01.998 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.030 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.079 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.108 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.154 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.169 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.204 [main] INFO  r.n.c.repository.CloudRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.218 [main] INFO  r.n.c.repository.CloudRepositoryTest - Классы class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.225 [main] INFO  r.n.c.repository.CloudRepositoryTest - Test completed
+00:52:02.260 [main] INFO  r.n.c.repository.UserRepositoryTest - Running test
+00:52:02.342 [main] INFO  r.n.c.repository.UserRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.365 [main] INFO  r.n.c.repository.UserRepositoryTest - Класс class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.407 [main] INFO  r.n.c.repository.UserRepositoryTest - Класс class ru.netology.cloudstorage.entity.User создан
+00:52:02.423 [main] INFO  r.n.c.repository.UserRepositoryTest - Класс class ru.netology.cloudstorage.entity.User обнулен
+00:52:02.434 [main] INFO  r.n.c.repository.UserRepositoryTest - Test completed
+00:52:02.534 [testcontainers-lifecycle-0] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+00:52:02.960 [testcontainers-lifecycle-0] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+00:52:02.962 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+00:52:03.022 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 20.10.23
+  API Version: 1.41
+  Operating System: Docker Desktop
+  Total Memory: 7851 MB
+00:52:03.025 [testcontainers-lifecycle-0] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+00:52:04.352 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+00:52:04.353 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+00:52:04.354 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+00:52:04.427 [testcontainers-lifecycle-0] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker environment should have more than 2GB free disk space
+00:52:04.479 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Creating container for image: mysql:latest
+00:52:04.693 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Starting container with ID: 3b04af04b4d100b891658085da5a394e51841a2487f24a52e59696e88a56afca
+00:52:04.933 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Container mysql:latest is starting: 3b04af04b4d100b891658085da5a394e51841a2487f24a52e59696e88a56afca
+00:52:04.971 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Waiting for database connection to become available at jdbc:mysql://localhost:62095/Netology_diplom using query 'SELECT 1'
+00:52:12.296 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Container is started (JDBC URL: jdbc:mysql://localhost:62095/Netology_diplom)
+00:52:12.298 [testcontainers-lifecycle-0] INFO  🐳 [mysql:latest] - Container mysql:latest started in PT7.861315S
+00:52:12.315 [main] INFO  🐳 [backend:latest] - Creating container for image: backend:latest
+00:52:12.418 [main] INFO  🐳 [backend:latest] - Starting container with ID: bcdb1dd239180e23c98fdf1b714cdbc37e5cb3f8477d720f64024ef84e6318bd
+00:52:12.877 [main] INFO  🐳 [backend:latest] - Container backend:latest is starting: bcdb1dd239180e23c98fdf1b714cdbc37e5cb3f8477d720f64024ef84e6318bd
+00:52:16.034 [testcontainers-wait-0] WARN  o.t.c.w.i.InternalCommandPortListeningCheck - An exception while executing the internal check: Container.ExecResult(exitCode=137, stdout=, stderr=/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+/bin/sh: 1: nc: not found
+/bin/bash: connect: Cannot assign requested address
+/bin/bash: /dev/tcp/localhost/8080: Cannot assign requested address
+)
+00:52:16.035 [main] INFO  🐳 [backend:latest] - Container backend:latest started in PT3.735264S
+00:52:16.349 [main] INFO  r.n.c.CloudServiceTApplicationTests - Starting CloudServiceTApplicationTests using Java 17.0.6 on MacBook-Pro-Dmitrij.local with PID 62726 (started by dmitrijvorobev in /Users/dmitrijvorobev/Desktop/Netology/CloudStor)
+00:52:16.354 [main] INFO  r.n.c.CloudServiceTApplicationTests - No active profile set, falling back to 1 default profile: "default"
+00:52:17.861 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:52:17.861 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+00:52:18.015 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:52:18.199 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+00:52:18.317 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+00:52:18.384 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+00:52:18.462 [main] INFO  liquibase.changelog - Reading from Netology_diplom.DATABASECHANGELOG
+00:52:18.490 [main] INFO  liquibase.util - UPDATE SUMMARY
+00:52:18.491 [main] INFO  liquibase.util - Run:                          0
+00:52:18.491 [main] INFO  liquibase.util - Previously run:               7
+00:52:18.491 [main] INFO  liquibase.util - Filtered out:                 0
+00:52:18.491 [main] INFO  liquibase.util - -------------------------------
+00:52:18.492 [main] INFO  liquibase.util - Total change sets:            7
+
+00:52:18.492 [main] INFO  liquibase.util - Update summary generated
+00:52:18.498 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:52:18.508 [main] INFO  liquibase.lockservice - Successfully released change log lock
+00:52:18.511 [main] INFO  liquibase.command - Command execution complete
+00:52:18.645 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:52:18.666 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+00:52:18.860 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:52:20.937 [Finalizer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection manager is shutting down
+00:52:20.942 [Finalizer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection manager shut down
+00:52:20.962 [main] INFO  r.n.c.CloudServiceTApplicationTests - Started CloudServiceTApplicationTests in 4.864 seconds (JVM running for 27.436)
+00:52:21.109 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST http://localhost:8080/login
+00:52:21.157 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+00:52:21.179 [main] DEBUG o.s.web.client.RestTemplate - Writing [AuthorizationRequest(login=admin@mail.ru, password=admin)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+00:52:21.196 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:52:21.198 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+00:52:21.198 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+00:52:21.206 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+00:52:21.208 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+00:52:21.210 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+00:52:21.210 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:62169<->127.0.0.1:8080
+00:52:21.211 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request POST /login HTTP/1.1
+00:52:21.211 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+00:52:21.211 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+00:52:21.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /login HTTP/1.1
+00:52:21.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+00:52:21.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+00:52:21.211 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 44
+00:52:21.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+00:52:21.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+00:52:21.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+00:52:21.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /login HTTP/1.1[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 44[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+00:52:21.212 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"login":"admin@mail.ru","password":"admin"}"
+00:52:21.616 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+00:52:21.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Method[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Access-Control-Request-Headers[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 21 May 2023 21:52:21 GMT[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+00:52:21.623 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:52:21.624 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "e1[\r][\n]"
+00:52:21.624 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"auth-token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLnJ1IiwidXNlcm5hbWUiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2ODQ3MDU5NDEsImV4cCI6MTY4NDc5MjM0MX0.LxQU5-rw_ty7mWnlavC8IHWrsfaLtrChb5RFBDqDdIs"}[\r][\n]"
+00:52:21.629 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Method
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Access-Control-Request-Headers
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 21 May 2023 21:52:21 GMT
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+00:52:21.630 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+00:52:21.633 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+00:52:21.634 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+00:52:21.636 [main] DEBUG o.s.web.client.RestTemplate - Reading to [ru.netology.cloudstorage.model.Response.AuthorizationResponse]
+00:52:21.649 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+00:52:21.649 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+00:52:21.649 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+00:52:21.649 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+00:52:21.650 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+00:52:22.352 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Running test
+00:52:22.756 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser созданы
+00:52:22.768 [main] INFO  r.n.c.security.JwtUserDetailsService - User with username: "admin" successfully loaded
+00:52:22.770 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser обнулены
+00:52:22.771 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser созданы
+00:52:22.772 [main] INFO  r.n.c.security.JwtUserDetailsService - User with username: "user" not found
+00:52:22.773 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser обнулены
+00:52:22.775 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser созданы
+00:52:22.775 [main] INFO  r.n.c.security.JwtUserDetailsService - User with username: "admin" successfully loaded
+00:52:22.775 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Классы class ru.netology.cloudstorage.security.JwtUserDetailsService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.security.model.JwtUser обнулены
+00:52:22.776 [main] INFO  r.n.c.s.JwtUserDetailsServiceTest - Test completed
+00:52:22.779 [main] INFO  r.n.c.service.UserServiceTest - Running test
+00:52:22.781 [main] INFO  r.n.c.service.UserServiceTest - Классы interface ru.netology.cloudstorage.service.UserService, class ru.netology.cloudstorage.entity.User созданы
+00:52:22.783 [main] INFO  r.n.c.service.UserServiceTest - Классы interface ru.netology.cloudstorage.service.UserService, class ru.netology.cloudstorage.entity.User обнулены
+00:52:22.786 [main] INFO  r.n.c.service.UserServiceTest - Классы interface ru.netology.cloudstorage.service.UserService, class ru.netology.cloudstorage.entity.User созданы
+00:52:22.788 [main] INFO  r.n.c.service.UserServiceTest - Классы interface ru.netology.cloudstorage.service.UserService, class ru.netology.cloudstorage.entity.User обнулены
+00:52:22.792 [main] INFO  r.n.c.service.UserServiceTest - Test completed
+00:52:22.793 [main] INFO  r.n.c.s.AuthorizationServiceTest - Running test
+00:52:22.927 [main] INFO  r.n.c.s.AuthorizationServiceTest - Классы interface ru.netology.cloudstorage.service.AuthorizationService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.model.Request.AuthorizationRequest, class ru.netology.cloudstorage.model.Response.AuthorizationResponse созданы
+00:52:22.930 [main] INFO  r.n.c.s.i.AuthorizationServiceImpl - Login and password in the UsernamePasswordAuthenticationToken class and pass the AuthenticationManager instance for verification
+00:52:22.931 [main] INFO  r.n.c.s.i.AuthorizationServiceImpl - User: admin successfully authorized
+00:52:22.935 [main] INFO  r.n.c.s.AuthorizationServiceTest - Классы interface ru.netology.cloudstorage.service.AuthorizationService, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.Role, class ru.netology.cloudstorage.model.Request.AuthorizationRequest, class ru.netology.cloudstorage.model.Response.AuthorizationResponse обнулены
+00:52:22.936 [main] INFO  r.n.c.s.AuthorizationServiceTest - Test completed
+00:52:22.938 [main] INFO  r.n.c.service.CloudServiceTest - Running test
+00:52:23.049 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.050 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to upload file "123.png"
+00:52:23.050 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Unauthorized Error
+00:52:23.051 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.054 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.055 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to update file "123.png"
+00:52:23.055 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.056 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Filename "123.png" successfully updated to "777.png"
+00:52:23.056 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.059 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.060 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to upload file "123.png"
+00:52:23.060 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.060 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Failed upload file: A file with the same name already exists
+00:52:23.061 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.064 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.065 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to delete file "123.png"
+00:52:23.066 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Unauthorized Error
+00:52:23.066 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.067 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.067 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to upload file "777.png"
+00:52:23.067 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.069 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Success upload file. Username admin
+00:52:23.070 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.071 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.072 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Unauthorized Error
+00:52:23.072 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.076 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.077 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to download file "123.png"
+00:52:23.077 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Unauthorized Error
+00:52:23.077 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.078 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.078 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to download file "321.png"
+00:52:23.079 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.079 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Failed download file: The file is missing and cannot be downloaded
+00:52:23.079 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.081 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.081 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to download file "123.png"
+00:52:23.082 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.082 [main] INFO  r.n.c.service.impl.CloudServiceImpl - File "123.png" downloaded successfully
+00:52:23.082 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.085 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.085 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to update file "321.png"
+00:52:23.085 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.086 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Failed update file: The file is missing and cannot be updated
+00:52:23.086 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.088 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.088 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.089 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Success get all files. User admin
+00:52:23.091 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.092 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.093 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to delete file "321.png"
+00:52:23.093 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.094 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Failed delete file: Failed to delete file because it is missing
+00:52:23.094 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.097 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.097 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to update file "123.png"
+00:52:23.097 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Unauthorized Error
+00:52:23.098 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.099 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile созданы
+00:52:23.100 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Start to delete file "123.png"
+00:52:23.101 [main] INFO  r.n.c.service.impl.CloudServiceImpl - Working with files: Authorized successfully
+00:52:23.101 [main] INFO  r.n.c.service.impl.CloudServiceImpl - File "123.png" deleted successfully
+00:52:23.101 [main] INFO  r.n.c.service.CloudServiceTest - Классы interface ru.netology.cloudstorage.service.CloudService, class org.springframework.mock.web.MockMultipartFile, class ru.netology.cloudstorage.entity.User, class ru.netology.cloudstorage.entity.CloudFile обнулены
+00:52:23.101 [main] INFO  r.n.c.service.CloudServiceTest - Test completed
+00:52:23.118 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:52:23.156 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:52:23.182 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+00:52:23.197 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
